@@ -5,7 +5,7 @@
 #include <string.h>
 using namespace std;
 
-//³éÏó²úÆ·ÀàAbstractBall
+//æŠ½è±¡äº§å“ç±»AbstractBall
 class AbstractBall
 {
 public:
@@ -13,73 +13,73 @@ public:
 
 	}
 	virtual ~AbstractBall(){}
-	//³éÏó·½·¨£º
+	//æŠ½è±¡æ–¹æ³•ï¼š
 	virtual void play(){};
 };
 
-//¾ßÌå²úÆ·ÀàBasketball
+//å…·ä½“äº§å“ç±»Basketball
 class Basketball :public AbstractBall
 {
 public:
 	Basketball(){
 		play();
 	}
-	//¾ßÌåÊµÏÖ·½·¨
+	//å…·ä½“å®ç°æ–¹æ³•
 	void play(){
 		printf("Jungle play Basketball\n\n");
 	}
 };
 
-//¾ßÌå²úÆ·ÀàFootball
+//å…·ä½“äº§å“ç±»Football
 class Football :public AbstractBall
 {
 public:
 	Football(){
 		play();
 	}
-	//¾ßÌåÊµÏÖ·½·¨
+	//å…·ä½“å®ç°æ–¹æ³•
 	void play(){
 		printf("Jungle play Football\n\n");
 	}
 };
 
-//³éÏó²úÆ·ÀàAbstractShirt
+//æŠ½è±¡äº§å“ç±»AbstractShirt
 class AbstractShirt
 {
 public:
 	AbstractShirt(){}
 	virtual ~AbstractShirt(){}
-	//³éÏó·½·¨£º
+	//æŠ½è±¡æ–¹æ³•ï¼š
 	virtual void wearShirt(){};
 };
 
-//¾ßÌå²úÆ·ÀàBasketballShirt
+//å…·ä½“äº§å“ç±»BasketballShirt
 class BasketballShirt :public AbstractShirt
 {
 public:
 	BasketballShirt(){
 		wearShirt();
 	}
-	//¾ßÌåÊµÏÖ·½·¨
+	//å…·ä½“å®ç°æ–¹æ³•
 	void wearShirt(){
 		printf("Jungle wear Basketball Shirt\n\n");
 	}
 };
 
-//¾ßÌå²úÆ·ÀàFootballShirt
+//å…·ä½“äº§å“ç±»FootballShirt
 class FootballShirt :public AbstractShirt
 {
 public:
 	FootballShirt(){
 		wearShirt();
 	}
-	//¾ßÌåÊµÏÖ·½·¨
+	//å…·ä½“å®ç°æ–¹æ³•
 	void wearShirt(){
 		printf("Jungle wear Football Shirt\n\n");
 	}
 };
 
-//³éÏó¹¤³§Àà
+//æŠ½è±¡å·¥å‚ç±»
 class AbstractFactory
 {
 public:
@@ -88,7 +88,7 @@ public:
 	virtual AbstractShirt *getShirt() = 0;
 };
 
-//¾ßÌå¹¤³§ÀàBasketballFactory
+//å…·ä½“å·¥å‚ç±»BasketballFactory
 class BasketballFactory :public AbstractFactory
 {
 public:
@@ -105,7 +105,7 @@ public:
 	}
 };
 
-//¾ßÌå¹¤³§ÀàBasketballFactory
+//å…·ä½“å·¥å‚ç±»BasketballFactory
 class FootballFactory :public AbstractFactory
 {
 public:

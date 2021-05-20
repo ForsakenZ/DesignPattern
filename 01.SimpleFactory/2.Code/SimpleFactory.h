@@ -1,11 +1,11 @@
 #ifndef __SIMPLE_FACTORY__
-#define __SIMPLE_FACTORY__
+#define __SIMPLE_FACTORY__7\(^o^)/~23 
 
 #include <iostream>
 #include <string.h>
 using namespace std;
 
-//抽象产品类AbstractProduct
+//AbstractProduct
 class AbstractSportProduct
 {
 public:
@@ -13,12 +13,12 @@ public:
 
 	}
 	virtual ~AbstractSportProduct(){}
-	//抽象方法：
+    //鎶借薄鏂规硶
 	virtual void printName(){};
 	virtual void play(){};
 };
 
-//具体产品类Basketball
+//Basketball
 class Basketball :public AbstractSportProduct
 {
 public:
@@ -30,7 +30,7 @@ public:
 	{
 
 	}
-	//具体实现方法
+
 	void printName(){
 		printf("Jungle get Basketball\n");
 	}
@@ -39,7 +39,7 @@ public:
 	}
 };
 
-//具体产品类Football
+//Football
 class Football :public AbstractSportProduct
 {
 public:
@@ -51,7 +51,7 @@ public:
 	{
 
 	}
-	//具体实现方法
+
 	void printName(){
 		printf("Jungle get Football\n");
 	}
@@ -60,7 +60,7 @@ public:
 	}
 };
 
-//具体产品类Volleyball
+//Volleyball
 class Volleyball :public AbstractSportProduct
 {
 public:
@@ -72,7 +72,7 @@ public:
 	{
 		
 	}
-	//具体实现方法
+
 	void printName(){
 		printf("Jungle get Volleyball\n");
 	}

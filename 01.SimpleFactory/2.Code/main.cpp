@@ -3,9 +3,9 @@
 
 int main()
 {
-	printf("¼òµ¥¹¤³§Ä£Ê½\n");
+	printf("ç®€å•å·¥å‚æ¨¡å¼\n");
 	
-	//¶¨Òå¹¤³§Àà¶ÔÏó
+	//åˆ›é€ å·¥å‚å¯¹è±¡
 	Factory *fac = new Factory();
 	AbstractSportProduct *product = NULL;
 
@@ -25,6 +25,5 @@ int main()
 	}
 
 	delete fac;
-	system("pause");
 	return 0;
 }
